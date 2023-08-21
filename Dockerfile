@@ -1,1 +1,6 @@
-FROM nginx:stable-alpine3.17-slim
+#Dockerfile
+FROM nginx:latest
+
+CMD ["nginx", "-g", "daemon off;"]
+
+EXPOSE 80
